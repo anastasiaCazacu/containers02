@@ -31,9 +31,13 @@ Am descarcat si am instalat Docker Desktop si am verificat functionalitatea aces
   b. "-ti"- de a se executa in -t- terminal si i- in mod interativ.
   c. "--name containers02 containers02"- este numele imaginii Docker- numele este "containers02" si imaginea noua cu acelasi nume.
   d.- "bash"- va fi rulata în interiorul containerului adica un shell bush. Dupa executarea acestei comenzi, un nou container containers02 va fi pornit si vei avea acces la un shell bash în interiorul acestuia
-- `root@197edea1759c:/var/www/html# ls -l
-total 4
--rwxr-xr-x 1 root root 157 Feb 24 19:57 index.html"- navighez catre "www/html`. "ls -l"- listarea arata ca: fisierul index.html a fost copiat cu succes în containerul Docker. Acesta are permisiunile:"-rwxr-xr-x"
+- ```shell
+  root@197edea1759c:/var/www/html# ls -l
+  total 4
+  -rwxr-xr-x 1 root root 157 Feb 24 19:57 index.html"- navighez catre "www/html
+  ```
+
+  "ls -l"- listarea arata ca: fisierul index.html a fost copiat cu succes în containerul Docker. Acesta are permisiunile:"-rwxr-xr-x"
   a. primul caracter "-" merge vorba despre un fisier obisnuit.
   b. primele 3 caractere "rwx"- asigura proprietarul poate citi, modifica si executa fisierul.
   c. urmatoarele 3 caractere"r-x" -membrii grupului de utilizatori poate executa, citi dar nu poate modifica.
